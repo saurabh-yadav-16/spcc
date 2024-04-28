@@ -1,0 +1,4 @@
+lex number.l
+yacc -d number.y
+gcc lex.yy.c y.tab.c -o number -ll
+./number input.txt

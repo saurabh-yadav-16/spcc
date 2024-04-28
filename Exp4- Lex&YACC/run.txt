@@ -1,0 +1,4 @@
+lex identifier.l
+yacc -d identifier.y
+gcc lex.yy.c y.tab.c -o identifier -ll
+./identifier input.txt
