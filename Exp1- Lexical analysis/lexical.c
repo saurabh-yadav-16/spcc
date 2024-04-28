@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 bool isDelimiter(char ch)
 {
 	if(ch == ' ' || ch == '+' || ch == '-' || ch == '*' ||
@@ -11,6 +12,7 @@ bool isDelimiter(char ch)
 		return (true);
 	return (false);
 }
+
 bool isOperator(char ch)
 {
 	if( ch == '+' || ch == '-' || ch == '*' ||
@@ -19,6 +21,7 @@ bool isOperator(char ch)
 		return(true);
 	return(false);
 } 
+
 bool validIdentifier(char* str)
 {
 	if(str[0] == '0' || str[0] == '1' || str[0] == '2' ||
@@ -28,6 +31,7 @@ bool validIdentifier(char* str)
 		return (false);
 	return (true);
 }
+
 bool isKeyword(char* str)
 {
 	if(!strcmp(str, "if") || !strcmp(str, "else") ||
@@ -45,6 +49,7 @@ bool isKeyword(char* str)
 		return (true);
 	return (false);
 }
+
 bool isInteger(char* str)
 {
 	int i, len = strlen(str);
@@ -59,6 +64,7 @@ bool isInteger(char* str)
 		}
 		return (true);
 }
+
 bool isRealNumber(char* str)
 {
 	int i, len = strlen(str);
@@ -78,7 +84,6 @@ bool isRealNumber(char* str)
 	return (hasDecimal);
 }
 
-
 char* subString(char* str, int left,int right)
 {
 	int i;
@@ -88,6 +93,7 @@ char* subString(char* str, int left,int right)
 	subStr[right - left + 1] = '\0';
 	return (subStr);
 }
+
 void parse(char* str)
 {
 	int left = 0,right = 0;
@@ -117,6 +123,7 @@ void parse(char* str)
 	}
 	return;
 }
+
 int main()
 {
 	char str[100];	
