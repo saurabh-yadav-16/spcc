@@ -39,16 +39,3 @@ int main(){
 	}
 	return(0);
 }
-
-/*
-Exp02
-Aim: program to eleminate left recursion from the given grammer
-theory:
-what is left recursion
-how to remove it
-need to remove left recursion
-Algorithm
-Code
-op
-conclusion
-*/

@@ -132,16 +132,3 @@ int main()
 	parse(str);
 	return (0);
 }
-
- 
- /*what is lexical
- role of lexical
- architecture of lexical
- algo(small)
- code
- output*/
-
-
-
-
-
